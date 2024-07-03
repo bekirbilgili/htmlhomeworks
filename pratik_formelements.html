@@ -6,6 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>EXAMPLE FORM</h1>
+
+    <form>
+        <fieldset>
+            <legend>Formu Doldurunuz: </legend>
+            <div>
+                <label for="fullname">Ad ve Soyad:</label>
+                <input type="text" name="fullname" id="fullname" required>
+            </div>
+            <div>
+                <label for="email">E-posta Adresi:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="password">Şifreniz:</label>
+                <input type="password" name="password" id="password" required minlength="8">
+            </div>
+            <div>
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Erkek</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Kadın</label>
+            </div>
+            <div>
+                <label for="fruits">Meyve Seçin</label>
+                <select name="fruits" id="fruits">
+                    <option value="">Seçiniz</option>
+                    <option value="apple">Elma</option>
+                    <option value="banana">Muz</option>
+                    <option value="orange">Portakal</option>
+                </select>                
+            </div>
+            <div>
+                <label for="message">Mesajınız:</label>
+                <textarea name="message" id="message" rows="10" cols="50"></textarea>
+            </div>
+            <input type="submit" value="GÖNDER">
+        </fieldset>
+    </form>
 </body>
 </html>
